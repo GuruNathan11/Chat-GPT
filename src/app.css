@@ -1,0 +1,52 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	@apply h-full;
+}
+
+/* .chat-bubble{
+	box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #275bc3;
+}
+.chat-bubble-secondary {
+    --tw-bg-opacity: 1;
+    background-color: hsl(var(--s) / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: hsl(var(--sc) / var(--tw-text-opacity));
+} */
+ 
+	.chat-bubble {
+	  max-width: 70%;
+	  margin-left: 2%;
+	  margin-right: 2%;
+	  background-color: #000080;
+	}
+	.chat-bubble-secondary {
+		background-color:	#a52a2a;
+	}
+
+
+	.arque-header {
+		display: inline-block;
+		font-size: 2rem;
+		font-weight: bold;
+		transform: rotate(-15deg);
+		color: #4a5568;
+		
+	}
+	.rotate-q {
+		display: inline-block;
+		animation: rotate 5s linear infinite;
+	}
+
+	@keyframes rotate {
+		to {
+			transform: rotate(360deg);
+		}
+	}
